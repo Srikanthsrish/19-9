@@ -1,0 +1,11 @@
+const div = document.createElement('div');
+const p1 = document.createElement('p');
+p1.innerText = 'Paragraph 1';
+const p2 = document.createElement('p');
+p2.innerText = 'Paragraph 2';
+const p3 = document.createElement('p');
+p3.innerText = 'Paragraph 3';
+div.appendChild(p1);
+div.appendChild(p2);
+div.appendChild(p3);
+document.body.appendChild(div);

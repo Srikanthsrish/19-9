@@ -1,0 +1,16 @@
+const ol = document.createElement('ol');
+const li1 = document.createElement('li');
+li1.innerText = 'Item 1';
+const li2 = document.createElement('li');
+li2.innerText = 'Item 2';
+const nestedOl = document.createElement('ol');
+const nestedLi1 = document.createElement('li');
+nestedLi1.innerText = 'Nested Item 1';
+const nestedLi2 = document.createElement('li');
+nestedLi2.innerText = 'Nested Item 2';
+nestedOl.appendChild(nestedLi1);
+nestedOl.appendChild(nestedLi2);
+li2.appendChild(nestedOl);
+ol.appendChild(li1);
+ol.appendChild(li2);
+document.body.appendChild(ol);

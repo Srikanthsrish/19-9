@@ -1,0 +1,18 @@
+const table = document.createElement('table');
+const row1 = document.createElement('tr');
+const row2 = document.createElement('tr');
+const cell1 = document.createElement('td');
+cell1.innerText = 'Row 1, Col 1';
+const cell2 = document.createElement('td');
+cell2.innerText = 'Row 1, Col 2';
+const cell3 = document.createElement('td');
+cell3.innerText = 'Row 2, Col 1';
+const cell4 = document.createElement('td');
+cell4.innerText = 'Row 2, Col 2';
+row1.appendChild(cell1);
+row1.appendChild(cell2);
+row2.appendChild(cell3);
+row2.appendChild(cell4);
+table.appendChild(row1);
+table.appendChild(row2);
+document.body.appendChild(table);
